@@ -1,9 +1,11 @@
-import 'package:check_out/features/checkout/presentation/views/payment_details_view.dart';
+import 'package:check_out/features/checkout/data/models/payment_intent_input_model.dart';
+import 'package:check_out/features/checkout/presentation/views/manger/payment_cubit.dart';
 import 'package:check_out/features/checkout/presentation/views/widgets/cart_info_item.dart';
 import 'package:check_out/features/checkout/presentation/views/widgets/custom_app_bar.dart';
 import 'package:check_out/features/checkout/presentation/views/widgets/payment_button.dart';
 import 'package:check_out/features/checkout/presentation/views/widgets/total_price.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyCartView extends StatelessWidget {
@@ -37,10 +39,11 @@ class MyCartView extends StatelessWidget {
           ),
           PaymentButton(
             title: 'Complete Payment',
-            onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const PaymentDetailsView())),
+            onPressed: () => BlocProvider.of<PaymentCubit>(context).makePayment(
+                paymentIntentInputModel: PaymentIntentInputModel(
+                    amount: '100',
+                    currency: 'USD',
+                    customer: 'cus_ReunSfJPNsLpVu')),
           ),
           SizedBox(
             height: 20.h,

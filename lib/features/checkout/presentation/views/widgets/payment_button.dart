@@ -1,5 +1,10 @@
 import 'package:check_out/core/utils/styles.dart';
+import 'package:check_out/features/checkout/presentation/views/manger/payment_cubit.dart';
+import 'package:check_out/features/checkout/presentation/views/payment_details_view.dart';
+import 'package:check_out/features/checkout/presentation/views/thank_you_view.dart';
+import 'package:check_out/features/checkout/presentation/views/widgets/custom_button_bloc_consumer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PaymentButton extends StatelessWidget {
@@ -20,6 +25,6 @@ class PaymentButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.r))),
         onPressed: onPressed,
-        child: Text(title, style: AppStyles.style22));
+        child: CustomButtonBlocConsumer(title: title));
   }
 }
