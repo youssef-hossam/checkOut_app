@@ -24,7 +24,7 @@ This Flutter project implements a payment gateway using Stripe, allowing users t
 
 
 ### Payment Interface
-![Payment Interface](app_screenshots/paymenti_nterface.png)
+![Payment Interface](app_screenshots/paymenti_interface.png)
 
 
 ### saved Payment cards
