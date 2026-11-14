@@ -1,4 +1,13 @@
-# Checkout - Payment Gateway Implementation Using Stripe
+<h1 align="center">💳 Checkout — Stripe Payment Gateway</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe"/>
+  <img src="https://img.shields.io/badge/Clean%20Architecture-FF6B2C?style=flat-square" alt="Clean Architecture"/>
+</p>
+
+<p align="center"><img src="app_screenshots/mockup.webp" alt="Checkout app" width="100%"/></p>
+
 
 This Flutter project implements a payment gateway using Stripe, allowing users to make payments and save their card details for future transactions. The application provides a seamless and secure payment experience with various features to enhance user convenience.
 
@@ -28,18 +37,14 @@ This Flutter project implements a payment gateway using Stripe, allowing users t
 ### saved Payment cards
 ![Test Mode Payment](app_screenshots/saved_payment_cards.png)
 
-## Getting Started
+## 🚀 Run it
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Runs in Stripe **test mode** — add your own Stripe test keys before running.
 
 ## Usage
 
@@ -75,3 +80,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 
 This README provides an overview of the application's features and usage. For more detailed instructions, refer to the documentation in the repository.
+
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://github.com/youssef-hossam">Youssef Hadwa</a></p>
