@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Clean%20Architecture-FF6B2C?style=flat-square" alt="Clean Architecture"/>
 </p>
 
-<p align="center"><img src="app_screenshots/mockup.webp" alt="Checkout app" width="100%"/></p>
+<p align="center"><img src="app_screenshots/hero.webp" alt="Checkout app" width="100%"/></p>
 
 
 This Flutter project implements a payment gateway using Stripe, allowing users to make payments and save their card details for future transactions. The application provides a seamless and secure payment experience with various features to enhance user convenience.
@@ -26,16 +26,11 @@ This Flutter project implements a payment gateway using Stripe, allowing users t
 - **Email Integration**: Optional email collection for creating a Link account and saving payment information.
 - **Discounts and Subtotal**: Calculates the order subtotal and applies any discounts before completing the payment.
 
-## Screenshots
+## 📱 Screens
 
-### Cart Summary
-![Cart Summary](app_screenshots/cart_summary.png)
-
-### Payment Interface
-![Payment Interface](app_screenshots/payment_interface.png)
-
-### saved Payment cards
-![Test Mode Payment](app_screenshots/saved_payment_cards.png)
+| Cart summary | Payment sheet | Saved cards |
+|:-:|:-:|:-:|
+| <img src="app_screenshots/cart_summary.webp" width="230"/> | <img src="app_screenshots/payment_interface.webp" width="230"/> | <img src="app_screenshots/saved_payment_cards.webp" width="230"/> |
 
 ## 🚀 Run it
 
